@@ -23,7 +23,7 @@ apt-get install -y --force-yes \
     libcurl4-openssl-dev \
     libevent-dev \
     libglib2.0-dev \
-    libjpeg-dev \
+    libjpeg8-dev \
     libmagickwand-dev \
     libmysqlclient-dev \
     libncurses5-dev \
@@ -32,7 +32,7 @@ apt-get install -y --force-yes \
     libreadline6-dev \
     libssl-dev \
     libxml2-dev \
-    libxslt-dev \
+    libxslt1-dev \
     netcat-openbsd \
     openjdk-7-jdk \
     openjdk-7-jre-headless \
@@ -44,7 +44,7 @@ apt-get install -y --force-yes \
     ruby \
     ruby-dev \
     socat \
-    syslinux \
+    syslinux-common \
     tar \
     telnet \
     zip \
