@@ -99,5 +99,22 @@ echo -e "\nInstalled versions:"
   python -V
 ) | sed -u "s/^/  /"
 
+mkdir /tmp/{app,build,buildpacks,cache}
+cd /tmp/buildpacks
+git clone https://github.com/heroku/heroku-buildpack-clojure
+git clone https://github.com/heroku/heroku-buildpack-go
+git clone https://github.com/heroku/heroku-buildpack-gradle
+git clone https://github.com/heroku/heroku-buildpack-grails
+git clone https://github.com/heroku/heroku-buildpack-java
+git clone https://github.com/heroku/heroku-buildpack-multi
+git clone https://github.com/heroku/heroku-buildpack-nodejs
+git clone https://github.com/heroku/heroku-buildpack-php
+git clone https://github.com/heroku/heroku-buildpack-play
+git clone https://github.com/heroku/heroku-buildpack-python
+git clone https://github.com/heroku/heroku-buildpack-ruby
+git clone https://github.com/heroku/heroku-buildpack-scala
+
+#TODO: make /build, /start and /exec scripts
+
 echo -e "\nSuccess!"
 exit 0
